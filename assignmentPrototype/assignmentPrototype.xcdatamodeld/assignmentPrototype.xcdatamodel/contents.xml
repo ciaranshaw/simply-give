@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15E65" minimumToolsVersion="Automatic">
+    <entity name="UserData" representedClassName=".UserData" syncable="YES">
+        <attribute name="userID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userPlan" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userSubscribed" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="userSubscribedPortions" optional="YES" attributeType="Transformable" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="UserData" positionX="-45" positionY="0" width="128" height="105"/>
+    </elements>
+</model>

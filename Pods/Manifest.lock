@@ -1,0 +1,20 @@
+PODS:
+  - Firebase (2.5.1)
+  - HTYTextField (1.1)
+  - Stripe (7.0.0):
+    - Stripe/Core (= 7.0.0)
+  - Stripe/Core (7.0.0)
+
+DEPENDENCIES:
+  - Firebase
+  - HTYTextField
+  - Stripe
+
+SPEC CHECKSUMS:
+  Firebase: 3565ea88b830f28f2c77ecc524622bc71a20d085
+  HTYTextField: 2b867b89a6bc15bca8a809737f45736eddcf6500
+  Stripe: 147bbff1ba7cf3422e4ed14f6e1fbbc72471ce6c
+
+PODFILE CHECKSUM: 5a9b3a490c24a7a1a2b965be048fbd434ff12fdf
+
+COCOAPODS: 1.0.0

@@ -16,7 +16,7 @@ struct DatabaseCharityHandler{
     // Return: None
     // Purpose: To get the next block of charities in a sequential list
     func getCharitiesInBlocks(cellsLoaded: Int, blockSize: UInt, next: (charities: NSMutableArray) -> Void){
-        let firebase = Firebase(url: "https://finalassignmentprot.firebaseio.com/charities")
+        let firebase = Firebase(url: "")
         firebase.queryOrderedByKey().queryStartingAtValue(convertToID(cellsLoaded + 1)).queryLimitedToFirst(blockSize).observeSingleEventOfType(.Value, withBlock: {snapshot in
             
             let returnCharities = NSMutableArray()
@@ -55,7 +55,7 @@ struct DatabaseCharityHandler{
     // Purpose: To get a list of charities from a search by the user
     func searchCharities(searchTerm: String, allCharities: NSMutableArray, next: (searchResults: NSMutableArray) -> Void){
         
-        let firebase = Firebase(url: "https://finalassignmentprot.firebaseio.com/charities")
+        let firebase = Firebase()
         
         firebase.queryOrderedByKey().observeSingleEventOfType(.Value, withBlock:{snapshot in
             let charities = snapshot.children as NSEnumerator
@@ -86,7 +86,7 @@ struct DatabaseCharityHandler{
     // Purpose: To get a list of charity objects from a list of charityIDs
     func getCharitiesFromIDList(charityIDs: NSMutableArray, next: (NSMutableArray) -> Void){
         let charities = NSMutableArray()
-        let firebase = Firebase(url: "https://finalassignmentprot.firebaseio.com/charities")
+        let firebase = Firebase(url: "")
         firebase.observeSingleEventOfType(.Value, withBlock: {snapshot in
             let dict = snapshot.value as! NSDictionary
             for id in charityIDs {
@@ -105,7 +105,7 @@ struct DatabaseCharityHandler{
     // Purpose: To get a list of charity names from a list of charityIDs
     func getCharityNamesFromIDList(charityIDs: NSMutableArray, next: (charities: NSMutableArray) -> Void){
         let charities = NSMutableArray()
-        let firebase = Firebase(url: "https://finalassignmentprot.firebaseio.com/charities")
+        let firebase = Firebase(url: "")
         firebase.observeSingleEventOfType(.Value, withBlock: {snapshot in
             let dict = snapshot.value as! NSDictionary
             for id in charityIDs {
@@ -122,7 +122,7 @@ struct DatabaseCharityHandler{
     // Return: None
     // Purpose: To update the subscribed value of a specified charity
     func updateCharitiesSubscribed(charityID: String, userID: String, task: String){
-        let firebase = Firebase(url: "https://finalassignmentprot.firebaseio.com/charities/\(charityID)")
+        let firebase = Firebase(url: "")
         firebase.observeSingleEventOfType(.Value, withBlock: {snapshot in
             let charityData = snapshot.value
             var subscribed = charityData!["charitySubscribed"] as? Int

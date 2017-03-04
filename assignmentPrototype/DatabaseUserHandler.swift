@@ -74,7 +74,7 @@ struct DatabaseUserHandler {
     // Return: None
     // Purpose: Get a user object from the firebase database from a userID
     func getUserObj(uid: String, next: (user: User) -> Void) -> Void{
-        let firebase = Firebase(url: "https://finalassignmentprot.firebaseio.com/users")
+        let firebase = Firebase(url: "/users")
         firebase.queryOrderedByKey().queryEqualToValue(uid).observeSingleEventOfType(.Value, withBlock: {snapshot in
             let newUser = self.userObjFromSnapshot(snapshot, userID: uid)
             next(user: newUser)
@@ -86,7 +86,7 @@ struct DatabaseUserHandler {
     // Return: None
     // Purpose: Get a dictionary of user details from the database from a userID
     func getUserDict(uid: String, next: (newUser: NSDictionary) -> Void) -> Void{
-        let firebase = Firebase(url: "https://finalassignmentprot.firebaseio.com/users")
+        let firebase = Firebase(url: "/users")
         firebase.queryOrderedByKey().queryEqualToValue(uid).observeSingleEventOfType(.Value, withBlock: {snapshot in
             let newUser = self.userDictFromSnapshot(snapshot, userID: uid)
             next(newUser: newUser)
@@ -98,7 +98,7 @@ struct DatabaseUserHandler {
     // Return: None
     // Purpose: Create a user obect using the user details
     func createUser(user: User, context: UIViewController, next: (uid: String) -> Void){
-        let firebase = Firebase(url: "https://finalassignmentprot.firebaseio.com/users")
+        let firebase = Firebase(url: "/users")
         firebase.createUser(user.userEmail, password: user.userPassword, withValueCompletionBlock: { error, result in
             if error != nil{
                 context.show("Email already associated with an account. Please use a different email, or select 'Forgot my password'")
@@ -114,7 +114,7 @@ struct DatabaseUserHandler {
     // Return: None
     // Purpose: Save the user details to the database
     func saveUser(user: User, next: (uid: String) -> Void){
-        let firebase = Firebase(url: "https://finalassignmentprot.firebaseio.com/users")
+        let firebase = Firebase(url: "/users")
         firebase.authUser(user.userEmail, password: user.userPassword) { (error, auth) in
             user.userID = auth.uid
             firebase.updateChildValues([auth.uid : self.userDictFromUser(user)], withCompletionBlock: {error in
@@ -128,7 +128,7 @@ struct DatabaseUserHandler {
     // Return: None
     // Purpose: Update the user details in the database
     func updateUser(user: User, userID: String){
-        let firebase = Firebase(url: "https://finalassignmentprot.firebaseio.com/users/\(userID)")
+        let firebase = Firebase(url: "/users/\(userID)")
         firebase.updateChildValues(["userAddress": addressDictFromAddress(user.userAddress!)], withCompletionBlock: { error in
             firebase.updateChildValues(["userAbout": user.userAbout!], withCompletionBlock: { error in
                 firebase.updateChildValues(["userFirstName": user.userFirstName!], withCompletionBlock: { error in
@@ -145,7 +145,7 @@ struct DatabaseUserHandler {
     // Return: None
     // Purpose: Get the user ID of the user based on their email and password
     func getUserIDLogin(email: String, password: String, success: (FAuthData) -> Void, failure: (NSError) -> Void) {
-        let firebase = Firebase(url: "https://finalassignmentprot.firebaseio.com")
+        let firebase = Firebase(url: "")
         firebase.authUser(email, password: password, withCompletionBlock: { error, auth in
             if error != nil{
                 failure(error)
@@ -160,7 +160,7 @@ struct DatabaseUserHandler {
     // Return: None
     // Purpose: Get the portion amounts of the user
     func getUserPortions(userID: String, next: (NSMutableArray) -> Void){
-        let firebase = Firebase(url: "https://finalassignmentprot.firebaseio.com/users/\(userID)")
+        let firebase = Firebase(url: "/users/\(userID)")
         firebase.queryOrderedByKey().queryEqualToValue("userSubscribedPortions").observeSingleEventOfType(.Value, withBlock: { snapshot in
             let dict = snapshot.value as! NSDictionary
             let portions = dict["userSubscribedPortions"] as! NSArray
@@ -174,7 +174,7 @@ struct DatabaseUserHandler {
     // Return: None
     // Purpose: Delete the user from the database
     func deleteUser(context: UIViewController, password: String, ch: CoreDataHandler, lh: LoginHandler, duh: DatabaseUserHandler){
-        let firebase = Firebase(url: "https://finalassignmentprot.firebaseio.com")
+        let firebase = Firebase(url: "")
         self.logout()
         let uid = ch.getUserData().userID
         self.getUserObj(uid!, next: {user in
@@ -184,7 +184,7 @@ struct DatabaseUserHandler {
                         context.show("Could not delete account with incorrect password. You have been logged out")
                     }
                 } else{
-                    let ref = Firebase(url: "https://finalassignmentprot.firebaseio.com/users/\(uid)")
+                    let ref = Firebase(url: "/users/\(uid)")
                     ref.removeValue()
                 }
             })
@@ -197,7 +197,7 @@ struct DatabaseUserHandler {
     // Return: None
     // Purpose: Update the subscribed array of the user
     func updateDatabaseSubscribed(userID: String, subscribed: NSMutableArray, task: String, charityIndex: Int, ch: CoreDataHandler, ph: PortionHandler){
-        let firebase = Firebase(url: "https://finalassignmentprot.firebaseio.com/users/\(userID)")
+        let firebase = Firebase(url: "/users/\(userID)")
         let returnArray = subscribed as NSArray
         print(returnArray)
         firebase.updateChildValues(["userSubscribed" : returnArray])
@@ -209,7 +209,7 @@ struct DatabaseUserHandler {
     // Return: None
     // Purpose: Update the subscribed portions of a user
     func updateSubscribedPortions(userID: String, subscribed: NSArray, task: String, charityIndex: Int, ch: CoreDataHandler, ph: PortionHandler){
-        let firebase = Firebase(url: "https://finalassignmentprot.firebaseio.com/users/\(userID)")
+        let firebase = Firebase(url: "/users/\(userID)")
         let array: NSArray?
                 
         if subscribed.count == 1{
@@ -238,7 +238,7 @@ struct DatabaseUserHandler {
     func updatePaymentInformation(plan: String, userID: String, ch: CoreDataHandler){
         ch.updatePlan(plan)
         
-        let firebase = Firebase(url: "https://finalassignmentprot.firebaseio.com/users/\(userID)")
+        let firebase = Firebase(url: "/users/\(userID)")
         firebase.updateChildValues(["plan": plan])
     }
     
@@ -250,7 +250,7 @@ struct DatabaseUserHandler {
         ch.updatePortions(portions)
         
         let userID = ch.getUserData().userID!
-        let firebase = Firebase(url: "https://finalassignmentprot.firebaseio.com/users/\(userID)")
+        let firebase = Firebase(url: "/users/\(userID)")
         let p = NSArray(array: portions)
         firebase.updateChildValues(["userSubscribedPortions": p])
     }
@@ -260,7 +260,7 @@ struct DatabaseUserHandler {
     // Return: None
     // Purpose: Log the user out of the firebase auth system
     func logout(){
-        let firebase = Firebase(url: "https://finalassignmentprot.firebaseio.com")
+        let firebase = Firebase(url: "")
         firebase.unauth()
     }
     

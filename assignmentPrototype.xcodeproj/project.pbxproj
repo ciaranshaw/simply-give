@@ -7,23 +7,113 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D4D5E98A18837774E26C09EC /* Pods_assignmentPrototype.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F7A5FD17DE657E959C76C75 /* Pods_assignmentPrototype.framework */; };
+		EF279AE61D05D8E100706EA2 /* MailHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF279AE51D05D8E100706EA2 /* MailHandler.swift */; };
+		EF279AE81D07263600706EA2 /* CharityPortionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF279AE71D07263600706EA2 /* CharityPortionTableViewCell.swift */; };
+		EF279AEA1D0726C000706EA2 /* CharityPortionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF279AE91D0726C000706EA2 /* CharityPortionTableViewController.swift */; };
+		EF279AEC1D07DF5B00706EA2 /* UserData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF279AEB1D07DF5B00706EA2 /* UserData+CoreDataProperties.swift */; };
+		EF279AEE1D08450D00706EA2 /* CharityPortionEditTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF279AED1D08450D00706EA2 /* CharityPortionEditTableViewController.swift */; };
+		EF279AF01D08462900706EA2 /* CharityPortionEditTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF279AEF1D08462900706EA2 /* CharityPortionEditTableViewCell.swift */; };
 		EF44F4141CE38AD00080A058 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF44F4131CE38AD00080A058 /* AppDelegate.swift */; };
 		EF44F4161CE38AD00080A058 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF44F4151CE38AD00080A058 /* ViewController.swift */; };
-		EF44F4191CE38AD00080A058 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF44F4171CE38AD00080A058 /* Main.storyboard */; };
 		EF44F41C1CE38AD00080A058 /* assignmentPrototype.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EF44F41A1CE38AD00080A058 /* assignmentPrototype.xcdatamodeld */; };
-		EF44F41E1CE38AD00080A058 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF44F41D1CE38AD00080A058 /* Assets.xcassets */; };
-		EF44F4211CE38AD00080A058 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF44F41F1CE38AD00080A058 /* LaunchScreen.storyboard */; };
+		EF44F42B1CE38B960080A058 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF44F42A1CE38B960080A058 /* Assets.xcassets */; };
+		EF44F43E1CE38BDA0080A058 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF44F42C1CE38BDA0080A058 /* SearchViewController.swift */; };
+		EF44F4401CE38BDA0080A058 /* HomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF44F42E1CE38BDA0080A058 /* HomeCollectionViewController.swift */; };
+		EF44F4411CE38BDA0080A058 /* CharityCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF44F42F1CE38BDA0080A058 /* CharityCollectionViewCell.swift */; };
+		EF44F4421CE38BDA0080A058 /* CharityProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF44F4301CE38BDA0080A058 /* CharityProfileViewController.swift */; };
+		EF44F4431CE38BDA0080A058 /* Charity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF44F4311CE38BDA0080A058 /* Charity.swift */; };
+		EF44F4441CE38BDA0080A058 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF44F4321CE38BDA0080A058 /* User.swift */; };
+		EF44F4451CE38BDA0080A058 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF44F4331CE38BDA0080A058 /* Address.swift */; };
+		EF44F4461CE38BDA0080A058 /* FooterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF44F4341CE38BDA0080A058 /* FooterCollectionViewCell.swift */; };
+		EF44F4471CE38BDA0080A058 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF44F4351CE38BDA0080A058 /* ProfileViewController.swift */; };
+		EF44F4481CE38BDA0080A058 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF44F4361CE38BDA0080A058 /* UserProfileViewController.swift */; };
+		EF44F4491CE38BDA0080A058 /* UserProfileAboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF44F4371CE38BDA0080A058 /* UserProfileAboutViewController.swift */; };
+		EF44F44A1CE38BDA0080A058 /* UserProfileSubscribedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF44F4381CE38BDA0080A058 /* UserProfileSubscribedViewController.swift */; };
+		EF44F44B1CE38BDA0080A058 /* UserProfilePaymentViewControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF44F4391CE38BDA0080A058 /* UserProfilePaymentViewControler.swift */; };
+		EF44F44D1CE38BDA0080A058 /* RegisterFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF44F43B1CE38BDA0080A058 /* RegisterFirstViewController.swift */; };
+		EF44F44E1CE38BDA0080A058 /* RegisterSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF44F43C1CE38BDA0080A058 /* RegisterSecondViewController.swift */; };
+		EF44F44F1CE38BDA0080A058 /* RegisterThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF44F43D1CE38BDA0080A058 /* RegisterThirdViewController.swift */; };
+		EF5F7F781D0B9B12005AAC1C /* PortionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5F7F771D0B9B12005AAC1C /* PortionHandler.swift */; };
+		EF8984191CED4BC200AE2838 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8984181CED4BC200AE2838 /* PaymentViewController.swift */; };
+		EF89841B1CED4D2000AE2838 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF89841A1CED4D2000AE2838 /* Accelerate.framework */; };
+		EF89841D1CED4D2B00AE2838 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF89841C1CED4D2B00AE2838 /* AudioToolbox.framework */; };
+		EF89841F1CED4D3100AE2838 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF89841E1CED4D3100AE2838 /* AVFoundation.framework */; };
+		EF8984211CED4D3B00AE2838 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF8984201CED4D3B00AE2838 /* CoreLocation.framework */; };
+		EF8984231CED4D4500AE2838 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF8984221CED4D4500AE2838 /* CoreMedia.framework */; };
+		EF8984251CED4D5700AE2838 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF8984241CED4D5700AE2838 /* MessageUI.framework */; };
+		EF8984271CED4D6200AE2838 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF8984261CED4D6200AE2838 /* MobileCoreServices.framework */; };
+		EF8984291CED4D6B00AE2838 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF8984281CED4D6B00AE2838 /* SystemConfiguration.framework */; };
+		EF89842B1CED4D7100AE2838 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF89842A1CED4D7100AE2838 /* SafariServices.framework */; };
+		EFB827BA1CF3F84F00EA7802 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFB827B91CF3F84F00EA7802 /* CoreData.framework */; };
+		EFB827C41CF40C1E00EA7802 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB827C31CF40C1E00EA7802 /* TabBarController.swift */; };
+		EFB827C81CF40F2F00EA7802 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB827C61CF40F2F00EA7802 /* UserData.swift */; };
+		EFB827CA1CF41F8F00EA7802 /* ProfileNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB827C91CF41F8F00EA7802 /* ProfileNavigationController.swift */; };
+		EFBF3B521CF592DA0013A8F7 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBF3B511CF592DA0013A8F7 /* LaunchScreenViewController.swift */; };
+		EFDAF7571CFC60BA00A4FBF6 /* LoginHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDAF7561CFC60BA00A4FBF6 /* LoginHandler.swift */; };
+		EFDAF7591CFC60C700A4FBF6 /* CoreDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDAF7581CFC60C700A4FBF6 /* CoreDataHandler.swift */; };
+		EFDAF75B1CFC60D200A4FBF6 /* DatabaseUserHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDAF75A1CFC60D200A4FBF6 /* DatabaseUserHandler.swift */; };
+		EFDAF75F1CFC664A00A4FBF6 /* PaymentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDAF75E1CFC664A00A4FBF6 /* PaymentHandler.swift */; };
+		EFECE8A91CEA06C30084F80B /* LoadingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFECE8A81CEA06C30084F80B /* LoadingScreen.swift */; };
+		EFF000F61CFD6FD300018607 /* DatabaseCharityHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF000F51CFD6FD300018607 /* DatabaseCharityHandler.swift */; };
+		EFF8E8641CFE8A1E0090FF1B /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF8E8631CFE8A1E0090FF1B /* MoreViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		274E05FCF34A66A24E44796D /* Pods-assignmentPrototype.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-assignmentPrototype.debug.xcconfig"; path = "Pods/Target Support Files/Pods-assignmentPrototype/Pods-assignmentPrototype.debug.xcconfig"; sourceTree = "<group>"; };
+		362C6472E5EE41ED50CCE5BB /* Pods-assignmentPrototype.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-assignmentPrototype.release.xcconfig"; path = "Pods/Target Support Files/Pods-assignmentPrototype/Pods-assignmentPrototype.release.xcconfig"; sourceTree = "<group>"; };
+		3F7A5FD17DE657E959C76C75 /* Pods_assignmentPrototype.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_assignmentPrototype.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF279AE51D05D8E100706EA2 /* MailHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailHandler.swift; sourceTree = "<group>"; };
+		EF279AE71D07263600706EA2 /* CharityPortionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharityPortionTableViewCell.swift; sourceTree = "<group>"; };
+		EF279AE91D0726C000706EA2 /* CharityPortionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharityPortionTableViewController.swift; sourceTree = "<group>"; };
+		EF279AEB1D07DF5B00706EA2 /* UserData+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UserData+CoreDataProperties.swift"; path = "../UserData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		EF279AED1D08450D00706EA2 /* CharityPortionEditTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharityPortionEditTableViewController.swift; sourceTree = "<group>"; };
+		EF279AEF1D08462900706EA2 /* CharityPortionEditTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharityPortionEditTableViewCell.swift; sourceTree = "<group>"; };
 		EF44F4101CE38AD00080A058 /* assignmentPrototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = assignmentPrototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF44F4131CE38AD00080A058 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF44F4151CE38AD00080A058 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EF44F4181CE38AD00080A058 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EF44F41B1CE38AD00080A058 /* assignmentPrototype.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = assignmentPrototype.xcdatamodel; sourceTree = "<group>"; };
-		EF44F41D1CE38AD00080A058 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EF44F4201CE38AD00080A058 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF44F4221CE38AD00080A058 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF44F42A1CE38B960080A058 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF44F42C1CE38BDA0080A058 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		EF44F42E1CE38BDA0080A058 /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
+		EF44F42F1CE38BDA0080A058 /* CharityCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharityCollectionViewCell.swift; sourceTree = "<group>"; };
+		EF44F4301CE38BDA0080A058 /* CharityProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharityProfileViewController.swift; sourceTree = "<group>"; };
+		EF44F4311CE38BDA0080A058 /* Charity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Charity.swift; sourceTree = "<group>"; };
+		EF44F4321CE38BDA0080A058 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		EF44F4331CE38BDA0080A058 /* Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		EF44F4341CE38BDA0080A058 /* FooterCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FooterCollectionViewCell.swift; sourceTree = "<group>"; };
+		EF44F4351CE38BDA0080A058 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		EF44F4361CE38BDA0080A058 /* UserProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		EF44F4371CE38BDA0080A058 /* UserProfileAboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileAboutViewController.swift; sourceTree = "<group>"; };
+		EF44F4381CE38BDA0080A058 /* UserProfileSubscribedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileSubscribedViewController.swift; sourceTree = "<group>"; };
+		EF44F4391CE38BDA0080A058 /* UserProfilePaymentViewControler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfilePaymentViewControler.swift; sourceTree = "<group>"; };
+		EF44F43B1CE38BDA0080A058 /* RegisterFirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterFirstViewController.swift; sourceTree = "<group>"; };
+		EF44F43C1CE38BDA0080A058 /* RegisterSecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterSecondViewController.swift; sourceTree = "<group>"; };
+		EF44F43D1CE38BDA0080A058 /* RegisterThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterThirdViewController.swift; sourceTree = "<group>"; };
+		EF5F7F771D0B9B12005AAC1C /* PortionHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortionHandler.swift; sourceTree = "<group>"; };
+		EF8984181CED4BC200AE2838 /* PaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		EF89841A1CED4D2000AE2838 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		EF89841C1CED4D2B00AE2838 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		EF89841E1CED4D3100AE2838 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		EF8984201CED4D3B00AE2838 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		EF8984221CED4D4500AE2838 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		EF8984241CED4D5700AE2838 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		EF8984261CED4D6200AE2838 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		EF8984281CED4D6B00AE2838 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		EF89842A1CED4D7100AE2838 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		EFB827B91CF3F84F00EA7802 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		EFB827C31CF40C1E00EA7802 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		EFB827C61CF40F2F00EA7802 /* UserData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		EFB827C91CF41F8F00EA7802 /* ProfileNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileNavigationController.swift; sourceTree = "<group>"; };
+		EFBF3B511CF592DA0013A8F7 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
+		EFDAF7561CFC60BA00A4FBF6 /* LoginHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginHandler.swift; sourceTree = "<group>"; };
+		EFDAF7581CFC60C700A4FBF6 /* CoreDataHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHandler.swift; sourceTree = "<group>"; };
+		EFDAF75A1CFC60D200A4FBF6 /* DatabaseUserHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseUserHandler.swift; sourceTree = "<group>"; };
+		EFDAF75E1CFC664A00A4FBF6 /* PaymentHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentHandler.swift; sourceTree = "<group>"; };
+		EFECE8A81CEA06C30084F80B /* LoadingScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingScreen.swift; sourceTree = "<group>"; };
+		EFF000F51CFD6FD300018607 /* DatabaseCharityHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseCharityHandler.swift; sourceTree = "<group>"; };
+		EFF8E8631CFE8A1E0090FF1B /* MoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +121,57 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFB827BA1CF3F84F00EA7802 /* CoreData.framework in Frameworks */,
+				EF89842B1CED4D7100AE2838 /* SafariServices.framework in Frameworks */,
+				EF8984291CED4D6B00AE2838 /* SystemConfiguration.framework in Frameworks */,
+				EF8984271CED4D6200AE2838 /* MobileCoreServices.framework in Frameworks */,
+				EF8984251CED4D5700AE2838 /* MessageUI.framework in Frameworks */,
+				EF8984231CED4D4500AE2838 /* CoreMedia.framework in Frameworks */,
+				EF8984211CED4D3B00AE2838 /* CoreLocation.framework in Frameworks */,
+				EF89841F1CED4D3100AE2838 /* AVFoundation.framework in Frameworks */,
+				EF89841D1CED4D2B00AE2838 /* AudioToolbox.framework in Frameworks */,
+				EF89841B1CED4D2000AE2838 /* Accelerate.framework in Frameworks */,
+				D4D5E98A18837774E26C09EC /* Pods_assignmentPrototype.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A3566EA5DD8BB3FCDEDA197 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				274E05FCF34A66A24E44796D /* Pods-assignmentPrototype.debug.xcconfig */,
+				362C6472E5EE41ED50CCE5BB /* Pods-assignmentPrototype.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		57DB66133168E0FF95F69D4F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EFB827B91CF3F84F00EA7802 /* CoreData.framework */,
+				EF89842A1CED4D7100AE2838 /* SafariServices.framework */,
+				EF8984281CED4D6B00AE2838 /* SystemConfiguration.framework */,
+				EF8984261CED4D6200AE2838 /* MobileCoreServices.framework */,
+				EF8984241CED4D5700AE2838 /* MessageUI.framework */,
+				EF8984221CED4D4500AE2838 /* CoreMedia.framework */,
+				EF8984201CED4D3B00AE2838 /* CoreLocation.framework */,
+				EF89841E1CED4D3100AE2838 /* AVFoundation.framework */,
+				EF89841C1CED4D2B00AE2838 /* AudioToolbox.framework */,
+				EF89841A1CED4D2000AE2838 /* Accelerate.framework */,
+				3F7A5FD17DE657E959C76C75 /* Pods_assignmentPrototype.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EF44F4071CE38AD00080A058 = {
 			isa = PBXGroup;
 			children = (
 				EF44F4121CE38AD00080A058 /* assignmentPrototype */,
 				EF44F4111CE38AD00080A058 /* Products */,
+				2A3566EA5DD8BB3FCDEDA197 /* Pods */,
+				57DB66133168E0FF95F69D4F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +186,96 @@
 		EF44F4121CE38AD00080A058 /* assignmentPrototype */ = {
 			isa = PBXGroup;
 			children = (
-				EF44F4131CE38AD00080A058 /* AppDelegate.swift */,
-				EF44F4151CE38AD00080A058 /* ViewController.swift */,
-				EF44F4171CE38AD00080A058 /* Main.storyboard */,
-				EF44F41D1CE38AD00080A058 /* Assets.xcassets */,
-				EF44F41F1CE38AD00080A058 /* LaunchScreen.storyboard */,
-				EF44F4221CE38AD00080A058 /* Info.plist */,
-				EF44F41A1CE38AD00080A058 /* assignmentPrototype.xcdatamodeld */,
+				EF5F7F801D0B9CCD005AAC1C /* UIViews */,
+				EF5F7F7A1D0B9B78005AAC1C /* Handlers */,
+				EF5F7F7E1D0B9C03005AAC1C /* CollectionViewCells */,
+				EF5F7F7D1D0B9BE6005AAC1C /* DataClasses */,
+				EF5F7F811D0B9CED005AAC1C /* Misc */,
+				EF5F7F7C1D0B9BB7005AAC1C /* CoreData */,
 			);
 			path = assignmentPrototype;
+			sourceTree = "<group>";
+		};
+		EF5F7F7A1D0B9B78005AAC1C /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				EFDAF7561CFC60BA00A4FBF6 /* LoginHandler.swift */,
+				EFDAF7581CFC60C700A4FBF6 /* CoreDataHandler.swift */,
+				EFDAF75A1CFC60D200A4FBF6 /* DatabaseUserHandler.swift */,
+				EFDAF75E1CFC664A00A4FBF6 /* PaymentHandler.swift */,
+				EFF000F51CFD6FD300018607 /* DatabaseCharityHandler.swift */,
+				EF279AE51D05D8E100706EA2 /* MailHandler.swift */,
+				EF5F7F771D0B9B12005AAC1C /* PortionHandler.swift */,
+			);
+			name = Handlers;
+			sourceTree = "<group>";
+		};
+		EF5F7F7C1D0B9BB7005AAC1C /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				EF44F41A1CE38AD00080A058 /* assignmentPrototype.xcdatamodeld */,
+				EF279AEB1D07DF5B00706EA2 /* UserData+CoreDataProperties.swift */,
+				EFB827C61CF40F2F00EA7802 /* UserData.swift */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		EF5F7F7D1D0B9BE6005AAC1C /* DataClasses */ = {
+			isa = PBXGroup;
+			children = (
+				EF44F4311CE38BDA0080A058 /* Charity.swift */,
+				EF44F4321CE38BDA0080A058 /* User.swift */,
+				EF44F4331CE38BDA0080A058 /* Address.swift */,
+			);
+			name = DataClasses;
+			sourceTree = "<group>";
+		};
+		EF5F7F7E1D0B9C03005AAC1C /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				EF44F42F1CE38BDA0080A058 /* CharityCollectionViewCell.swift */,
+				EF44F4341CE38BDA0080A058 /* FooterCollectionViewCell.swift */,
+			);
+			name = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		EF5F7F801D0B9CCD005AAC1C /* UIViews */ = {
+			isa = PBXGroup;
+			children = (
+				EFB827C31CF40C1E00EA7802 /* TabBarController.swift */,
+				EF44F42C1CE38BDA0080A058 /* SearchViewController.swift */,
+				EF44F42E1CE38BDA0080A058 /* HomeCollectionViewController.swift */,
+				EFF8E8631CFE8A1E0090FF1B /* MoreViewController.swift */,
+				EF44F4301CE38BDA0080A058 /* CharityProfileViewController.swift */,
+				EFB827C91CF41F8F00EA7802 /* ProfileNavigationController.swift */,
+				EF44F4351CE38BDA0080A058 /* ProfileViewController.swift */,
+				EF44F4361CE38BDA0080A058 /* UserProfileViewController.swift */,
+				EF44F4371CE38BDA0080A058 /* UserProfileAboutViewController.swift */,
+				EF44F4381CE38BDA0080A058 /* UserProfileSubscribedViewController.swift */,
+				EF44F4391CE38BDA0080A058 /* UserProfilePaymentViewControler.swift */,
+				EF44F43B1CE38BDA0080A058 /* RegisterFirstViewController.swift */,
+				EF44F43C1CE38BDA0080A058 /* RegisterSecondViewController.swift */,
+				EF44F43D1CE38BDA0080A058 /* RegisterThirdViewController.swift */,
+				EF8984181CED4BC200AE2838 /* PaymentViewController.swift */,
+				EF279AE71D07263600706EA2 /* CharityPortionTableViewCell.swift */,
+				EF279AE91D0726C000706EA2 /* CharityPortionTableViewController.swift */,
+				EF279AED1D08450D00706EA2 /* CharityPortionEditTableViewController.swift */,
+				EF279AEF1D08462900706EA2 /* CharityPortionEditTableViewCell.swift */,
+				EFECE8A81CEA06C30084F80B /* LoadingScreen.swift */,
+				EF44F4151CE38AD00080A058 /* ViewController.swift */,
+			);
+			name = UIViews;
+			sourceTree = "<group>";
+		};
+		EF5F7F811D0B9CED005AAC1C /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				EF44F4131CE38AD00080A058 /* AppDelegate.swift */,
+				EF44F42A1CE38B960080A058 /* Assets.xcassets */,
+				EFBF3B511CF592DA0013A8F7 /* LaunchScreenViewController.swift */,
+				EF44F4221CE38AD00080A058 /* Info.plist */,
+			);
+			name = Misc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +285,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EF44F4251CE38AD00080A058 /* Build configuration list for PBXNativeTarget "assignmentPrototype" */;
 			buildPhases = (
+				7820E2FF5A00CBFB6088B637 /* 📦 Check Pods Manifest.lock */,
 				EF44F40C1CE38AD00080A058 /* Sources */,
 				EF44F40D1CE38AD00080A058 /* Frameworks */,
 				EF44F40E1CE38AD00080A058 /* Resources */,
+				B6032DCB1D3FBC10B2175DE3 /* 📦 Embed Pods Frameworks */,
+				256DF580514812B38C7652F4 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,13 +340,59 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF44F4211CE38AD00080A058 /* LaunchScreen.storyboard in Resources */,
-				EF44F41E1CE38AD00080A058 /* Assets.xcassets in Resources */,
-				EF44F4191CE38AD00080A058 /* Main.storyboard in Resources */,
+				EF44F42B1CE38B960080A058 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		256DF580514812B38C7652F4 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-assignmentPrototype/Pods-assignmentPrototype-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7820E2FF5A00CBFB6088B637 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B6032DCB1D3FBC10B2175DE3 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-assignmentPrototype/Pods-assignmentPrototype-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EF44F40C1CE38AD00080A058 /* Sources */ = {
@@ -140,31 +400,47 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF44F4161CE38AD00080A058 /* ViewController.swift in Sources */,
+				EFB827C41CF40C1E00EA7802 /* TabBarController.swift in Sources */,
+				EFDAF75B1CFC60D200A4FBF6 /* DatabaseUserHandler.swift in Sources */,
+				EF44F44D1CE38BDA0080A058 /* RegisterFirstViewController.swift in Sources */,
+				EF279AE81D07263600706EA2 /* CharityPortionTableViewCell.swift in Sources */,
 				EF44F4141CE38AD00080A058 /* AppDelegate.swift in Sources */,
+				EF5F7F781D0B9B12005AAC1C /* PortionHandler.swift in Sources */,
+				EF279AEE1D08450D00706EA2 /* CharityPortionEditTableViewController.swift in Sources */,
+				EF279AEC1D07DF5B00706EA2 /* UserData+CoreDataProperties.swift in Sources */,
+				EF44F44E1CE38BDA0080A058 /* RegisterSecondViewController.swift in Sources */,
+				EF44F4401CE38BDA0080A058 /* HomeCollectionViewController.swift in Sources */,
+				EF44F44B1CE38BDA0080A058 /* UserProfilePaymentViewControler.swift in Sources */,
+				EF279AF01D08462900706EA2 /* CharityPortionEditTableViewCell.swift in Sources */,
+				EF44F4431CE38BDA0080A058 /* Charity.swift in Sources */,
+				EFECE8A91CEA06C30084F80B /* LoadingScreen.swift in Sources */,
+				EF44F4411CE38BDA0080A058 /* CharityCollectionViewCell.swift in Sources */,
+				EFBF3B521CF592DA0013A8F7 /* LaunchScreenViewController.swift in Sources */,
+				EFF000F61CFD6FD300018607 /* DatabaseCharityHandler.swift in Sources */,
+				EFDAF75F1CFC664A00A4FBF6 /* PaymentHandler.swift in Sources */,
+				EF44F4421CE38BDA0080A058 /* CharityProfileViewController.swift in Sources */,
+				EFB827CA1CF41F8F00EA7802 /* ProfileNavigationController.swift in Sources */,
+				EF44F43E1CE38BDA0080A058 /* SearchViewController.swift in Sources */,
+				EF44F4491CE38BDA0080A058 /* UserProfileAboutViewController.swift in Sources */,
+				EF44F44F1CE38BDA0080A058 /* RegisterThirdViewController.swift in Sources */,
+				EF44F44A1CE38BDA0080A058 /* UserProfileSubscribedViewController.swift in Sources */,
+				EFF8E8641CFE8A1E0090FF1B /* MoreViewController.swift in Sources */,
+				EF44F4441CE38BDA0080A058 /* User.swift in Sources */,
+				EFDAF7591CFC60C700A4FBF6 /* CoreDataHandler.swift in Sources */,
+				EF44F4481CE38BDA0080A058 /* UserProfileViewController.swift in Sources */,
+				EFB827C81CF40F2F00EA7802 /* UserData.swift in Sources */,
+				EFDAF7571CFC60BA00A4FBF6 /* LoginHandler.swift in Sources */,
+				EF8984191CED4BC200AE2838 /* PaymentViewController.swift in Sources */,
+				EF44F4451CE38BDA0080A058 /* Address.swift in Sources */,
+				EF279AE61D05D8E100706EA2 /* MailHandler.swift in Sources */,
+				EF44F4471CE38BDA0080A058 /* ProfileViewController.swift in Sources */,
 				EF44F41C1CE38AD00080A058 /* assignmentPrototype.xcdatamodeld in Sources */,
+				EF279AEA1D0726C000706EA2 /* CharityPortionTableViewController.swift in Sources */,
+				EF44F4461CE38BDA0080A058 /* FooterCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		EF44F4171CE38AD00080A058 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EF44F4181CE38AD00080A058 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		EF44F41F1CE38AD00080A058 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EF44F4201CE38AD00080A058 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		EF44F4231CE38AD00080A058 /* Debug */ = {
@@ -252,23 +528,30 @@
 		};
 		EF44F4261CE38AD00080A058 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 274E05FCF34A66A24E44796D /* Pods-assignmentPrototype.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = assignmentPrototype/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cpsha5.assignmentPrototype;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "assignmentPrototype/assignmentPrototype-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		EF44F4271CE38AD00080A058 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 362C6472E5EE41ED50CCE5BB /* Pods-assignmentPrototype.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = assignmentPrototype/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cpsha5.assignmentPrototype;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "assignmentPrototype/assignmentPrototype-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -291,6 +574,7 @@
 				EF44F4271CE38AD00080A058 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
